@@ -8,7 +8,8 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.applayout.databinding.ActivityIntro2Binding;
+import com.example.cuu_ho.databinding.ActivityIntro2Binding;
+
 
 public class Intro2Activity extends AppCompatActivity {
     ActivityIntro2Binding binding;

@@ -7,7 +7,8 @@ import android.os.Looper;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.applayout.databinding.ActivityWelcomeBinding;
+import com.example.cuu_ho.databinding.ActivityWelcomeBinding;
+
 
 public class WelcomeActivity extends AppCompatActivity {
     ActivityWelcomeBinding binding;

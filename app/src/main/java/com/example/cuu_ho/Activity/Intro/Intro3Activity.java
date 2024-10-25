@@ -7,7 +7,8 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.applayout.databinding.ActivityIntro3Binding;
+import com.example.cuu_ho.databinding.ActivityIntro3Binding;
+
 
 public class Intro3Activity extends AppCompatActivity {
     ActivityIntro3Binding binding;

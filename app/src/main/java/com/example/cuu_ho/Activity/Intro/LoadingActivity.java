@@ -7,7 +7,8 @@ import android.os.Looper;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.applayout.databinding.ActivityLoadingBinding;
+import com.example.cuu_ho.databinding.ActivityLoadingBinding;
+
 
 public class LoadingActivity extends AppCompatActivity {
     ActivityLoadingBinding binding;
