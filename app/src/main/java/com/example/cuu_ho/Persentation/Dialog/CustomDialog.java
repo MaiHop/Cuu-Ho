@@ -1,4 +1,4 @@
-package com.example.cuu_ho.Dialog;
+package com.example.cuu_ho.Persentation.Dialog;
 
 
 import android.app.Activity;

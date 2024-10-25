@@ -1,4 +1,4 @@
-package com.example.cuu_ho.Activity.Intro;
+package com.example.cuu_ho.Persentation.Activity.Intro;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,25 +7,24 @@ import android.os.Looper;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.cuu_ho.databinding.ActivityLoadingBinding;
+import com.example.cuu_ho.databinding.ActivityWelcomeBinding;
 
 
-public class LoadingActivity extends AppCompatActivity {
-    ActivityLoadingBinding binding;
+public class WelcomeActivity extends AppCompatActivity {
+    ActivityWelcomeBinding binding;
+    Handler handler = new Handler(Looper.getMainLooper());
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityLoadingBinding.inflate(getLayoutInflater());
+        binding = ActivityWelcomeBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        Handler handler = new Handler(Looper.getMainLooper());
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(LoadingActivity.this, WelcomeActivity.class);
+                Intent intent = new Intent(WelcomeActivity.this, Intro1Activity.class);
                 startActivity(intent);
                 finish();
             }
         }, 2000);
-
     }
 }

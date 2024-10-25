@@ -1,4 +1,4 @@
-package com.example.cuu_ho.Activity.ResetPassword;
+package com.example.cuu_ho.Persentation.Activity.ResetPassword;
 
 import android.os.Bundle;
 import android.os.Handler;
@@ -8,7 +8,7 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.cuu_ho.Dialog.CustomDialog;
+import com.example.cuu_ho.Persentation.Dialog.CustomDialog;
 import com.example.cuu_ho.databinding.ActivityResetPasswordOtpBinding;
 
 

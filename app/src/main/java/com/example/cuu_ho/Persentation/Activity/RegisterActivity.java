@@ -1,4 +1,4 @@
-package com.example.cuu_ho.Activity;
+package com.example.cuu_ho.Persentation.Activity;
 
 import android.os.Bundle;
 import android.os.Handler;
@@ -6,16 +6,16 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.cuu_ho.Dialog.CustomDialog;
-import com.example.cuu_ho.databinding.ActivityLoginBinding;
+import com.example.cuu_ho.Persentation.Dialog.CustomDialog;
+import com.example.cuu_ho.databinding.ActivityRegisterBinding;
 
 
-public class LoginActivity extends AppCompatActivity {
-    ActivityLoginBinding binding;
+public class RegisterActivity extends AppCompatActivity {
+    ActivityRegisterBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityLoginBinding.inflate(getLayoutInflater());
+        binding = ActivityRegisterBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         initialize();
     }
@@ -25,18 +25,22 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(checkEdtEmpty()) {
-                    CustomDialog customDialog = new CustomDialog(LoginActivity.this);
+                    CustomDialog customDialog = new CustomDialog(RegisterActivity.this);
                     customDialog.showDialogLoading();
                     Handler handler = new Handler();
                     Runnable runnable = new Runnable() {
                         @Override
                         public void run() {
                             customDialog.cancel();
-                            showDialogSuccess(customDialog);
                         }
                     };
                     handler.postDelayed(runnable, 5000);
                 }
+            }
+        });
+        binding.edtName.setOnFocusChangeListener((v, hasFocus) -> {
+            if (hasFocus) {
+                binding.edtNameLayout.setError(null);
             }
         });
         binding.edtPassword.setOnFocusChangeListener((v, hasFocus) -> {
@@ -57,25 +61,12 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
-    private void showDialogSuccess(CustomDialog customDialog ) {
-        customDialog.showDialogNotification("Đăng ký thành công",
-                "Bạn đã là thành viên của Rescuezy",
-                CustomDialog.SUCCESS);
-        Handler handler = new Handler();
-        Runnable runnable = new Runnable() {
-            @Override
-            public void run() {
-                customDialog.cancel();
-            }
-        };
-        handler.postDelayed(runnable, 5000);
-    }
-
     private boolean checkEdtEmpty() {
-        if(binding.edtPhone.getText().toString().isEmpty()) {
-            binding.edtPhoneLayout.setError("Email không được để trống!");
-        }
-        if(binding.edtPassword.getText().toString().isEmpty()) {
+        if(binding.edtName.getText().toString().isEmpty()) {
+            binding.edtPasswordLayout.setError("Tên không được để trống!");
+        }else if(binding.edtPhone.getText().toString().isEmpty()) {
+            binding.edtPhoneLayout.setError("Số điện thoại không được để trống!");
+        }else if(binding.edtPassword.getText().toString().isEmpty()) {
             binding.edtPasswordLayout.setError("Password không được để trống!");
         } else return true;
         return false;

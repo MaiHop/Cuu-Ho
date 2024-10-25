@@ -1,4 +1,4 @@
-package com.example.cuu_ho.Activity;
+package com.example.cuu_ho.Persentation.Activity;
 
 import android.os.Bundle;
 import android.view.View;
@@ -8,10 +8,10 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.example.cuu_ho.Fragment.AccountFragment;
-import com.example.cuu_ho.Fragment.HistoryFragment;
-import com.example.cuu_ho.Fragment.HomeFragment;
-import com.example.cuu_ho.Fragment.WorkShopFragment;
+import com.example.cuu_ho.Persentation.Fragment.AccountFragment;
+import com.example.cuu_ho.Persentation.Fragment.HistoryFragment;
+import com.example.cuu_ho.Persentation.Fragment.HomeFragment;
+import com.example.cuu_ho.Persentation.Fragment.WorkShopFragment;
 import com.example.cuu_ho.R;
 import com.example.cuu_ho.databinding.ActivityMainBinding;
 

@@ -1,4 +1,4 @@
-package com.example.cuu_ho.Activity.Intro;
+package com.example.cuu_ho.Persentation.Activity.Intro;
 
 import android.content.Intent;
 import android.os.Bundle;

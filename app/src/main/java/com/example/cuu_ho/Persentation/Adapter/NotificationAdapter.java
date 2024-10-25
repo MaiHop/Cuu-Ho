@@ -1,4 +1,4 @@
-package com.example.cuu_ho.Adapter;
+package com.example.cuu_ho.Persentation.Adapter;
 
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
@@ -7,7 +7,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 
-import com.example.cuu_ho.Holder.NotificationHolder;
+import com.example.cuu_ho.Persentation.ViewHolder.NotificationHolder;
 import com.example.cuu_ho.databinding.ItemNotificationBinding;
 
 import java.util.List;

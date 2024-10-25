@@ -1,4 +1,4 @@
-package com.example.cuu_ho.Activity.ResetPassword;
+package com.example.cuu_ho.Persentation.Activity.ResetPassword;
 
 import android.os.Bundle;
 

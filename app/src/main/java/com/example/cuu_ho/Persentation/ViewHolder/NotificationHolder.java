@@ -1,4 +1,4 @@
-package com.example.cuu_ho.Holder;
+package com.example.cuu_ho.Persentation.ViewHolder;
 
 import androidx.recyclerview.widget.RecyclerView;
 

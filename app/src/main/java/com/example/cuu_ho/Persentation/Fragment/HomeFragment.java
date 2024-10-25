@@ -1,4 +1,4 @@
-package com.example.cuu_ho.Fragment;
+package com.example.cuu_ho.Persentation.Fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
 
-import com.example.applayout.databinding.FragmentHomeBinding;
+import com.example.cuu_ho.databinding.FragmentHomeBinding;
 
 
 public class HomeFragment extends Fragment {
