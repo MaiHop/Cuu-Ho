@@ -27,18 +27,18 @@ public class ResetPasswordPhoneActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(checkEdtEmpty()) {
-                    CustomDialog customDialog = new CustomDialog(ResetPasswordPhoneActivity.this);
-                    customDialog.showDialogLoading();
-                    Handler handler = new Handler();
-                    Runnable runnable = new Runnable() {
-                        @Override
-                        public void run() {
-                            customDialog.cancel();
-                            Intent intent = new Intent(ResetPasswordPhoneActivity.this, ResetPasswordOTPActivity.class);
-                            startActivity(intent);
-                        }
-                    };
-                    handler.postDelayed(runnable, 5000);
+//                    CustomDialog customDialog = new CustomDialog(ResetPasswordPhoneActivity.this);
+//                    customDialog.showDialogLoading();
+//                    Handler handler = new Handler();
+//                    Runnable runnable = new Runnable() {
+//                        @Override
+//                        public void run() {
+//                            customDialog.cancel();
+//                            Intent intent = new Intent(ResetPasswordPhoneActivity.this, ResetPasswordOTPActivity.class);
+//                            startActivity(intent);
+//                        }
+//                    };
+//                    handler.postDelayed(runnable, 5000);
                 }
             }
         });
