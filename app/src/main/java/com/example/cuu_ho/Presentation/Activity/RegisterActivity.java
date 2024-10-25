@@ -25,16 +25,16 @@ public class RegisterActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(checkEdtEmpty()) {
-                    CustomDialog customDialog = new CustomDialog(RegisterActivity.this);
-                    customDialog.showDialogLoading();
-                    Handler handler = new Handler();
-                    Runnable runnable = new Runnable() {
-                        @Override
-                        public void run() {
-                            customDialog.cancel();
-                        }
-                    };
-                    handler.postDelayed(runnable, 5000);
+//                    CustomDialog customDialog = new CustomDialog(RegisterActivity.this);
+//                    customDialog.showDialogLoading();
+//                    Handler handler = new Handler();
+//                    Runnable runnable = new Runnable() {
+//                        @Override
+//                        public void run() {
+//                            customDialog.cancel();
+//                        }
+//                    };
+//                    handler.postDelayed(runnable, 5000);
                 }
             }
         });

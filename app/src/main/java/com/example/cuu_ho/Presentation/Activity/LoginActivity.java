@@ -25,17 +25,17 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(checkEdtEmpty()) {
-                    CustomDialog customDialog = new CustomDialog(LoginActivity.this);
-                    customDialog.showDialogLoading();
-                    Handler handler = new Handler();
-                    Runnable runnable = new Runnable() {
-                        @Override
-                        public void run() {
-                            customDialog.cancel();
-                            showDialogSuccess(customDialog);
-                        }
-                    };
-                    handler.postDelayed(runnable, 5000);
+//                    CustomDialog customDialog = new CustomDialog(LoginActivity.this);
+//                    customDialog.showDialogLoading();
+//                    Handler handler = new Handler();
+//                    Runnable runnable = new Runnable() {
+//                        @Override
+//                        public void run() {
+//                            customDialog.cancel();
+//                            showDialogSuccess(customDialog);
+//                        }
+//                    };
+//                    handler.postDelayed(runnable, 5000);
                 }
             }
         });
@@ -58,17 +58,17 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void showDialogSuccess(CustomDialog customDialog ) {
-        customDialog.showDialogNotification("Đăng ký thành công",
-                "Bạn đã là thành viên của Rescuezy",
-                CustomDialog.SUCCESS);
-        Handler handler = new Handler();
-        Runnable runnable = new Runnable() {
-            @Override
-            public void run() {
-                customDialog.cancel();
-            }
-        };
-        handler.postDelayed(runnable, 5000);
+//        customDialog.showDialogNotification("Đăng ký thành công",
+//                "Bạn đã là thành viên của Rescuezy",
+//                CustomDialog.SUCCESS);
+//        Handler handler = new Handler();
+//        Runnable runnable = new Runnable() {
+//            @Override
+//            public void run() {
+//                customDialog.cancel();
+//            }
+//        };
+//        handler.postDelayed(runnable, 5000);
     }
 
     private boolean checkEdtEmpty() {
