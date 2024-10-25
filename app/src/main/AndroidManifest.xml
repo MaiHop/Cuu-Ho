@@ -13,16 +13,69 @@
         android:theme="@style/Theme.CuuHo"
         tools:targetApi="31">
         <activity
-            android:name=".Persentation.Activity.RequestDetailActivity"
-            android:exported="true" />
+            android:name=".Presentation.Activity."
+            android:exported="true">
+        </activity>
         <activity
             android:name=".MainActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".Custom.CustomLayout"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Presentation.Activity.Intro.Intro1Activity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".Presentation.Activity.Intro.Intro2Activity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".Presentation.Activity.Intro.Intro3Activity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".Presentation.Activity.Intro.LoadingActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".Presentation.Activity.Intro.WelcomeActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".Presentation.Activity.ResetPassword.ResetPasswordErrorActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".Presentation.Activity.ResetPassword.ResetPasswordNewActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".Presentation.Activity.ResetPassword.ResetPasswordOTPActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".Presentation.Activity.ResetPassword.ResetPasswordPhoneActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".Presentation.Activity.ResetPassword.ResetPasswordSuccessActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".Presentation.Activity.LoginActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".Presentation.Activity.RegisterActivity"
+            android:exported="false">
         </activity>
     </application>
 
