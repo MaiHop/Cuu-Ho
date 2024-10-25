@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.BottomNavigation" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.CuuHo" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="colorPrimary">@color/primary_main</item>
         <item name="colorPrimaryVariant">@color/primary_main</item>
         <item name="colorOnPrimary">@color/white</item>
