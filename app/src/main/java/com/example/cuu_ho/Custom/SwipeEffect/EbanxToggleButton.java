@@ -1,4 +1,4 @@
-package com.example.cuu_ho.Custom.swipeEffect;
+package com.example.cuu_ho.Custom.SwipeEffect;
 
 import android.animation.Animator;
 import android.animation.AnimatorSet;

@@ -7,9 +7,9 @@
     android:background="#333E48"
     android:orientation="vertical"
     android:padding="20dp"
-    tools:context=".Custom.swipeEffect.SwipeActivity">
+    tools:context=".Custom.SwipeEffect.SwipeActivity">
 
-    <com.example.cuu_ho.Custom.swipebtn.SwipeButton
+    <com.example.cuu_ho.Custom.SwipeBtn.SwipeButton
         android:id="@+id/swipeBtnDisabled"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -33,7 +33,7 @@
         app:inner_text_top_padding="18dp"
         app:inner_text_bottom_padding="18dp" />
 
-    <com.example.cuu_ho.Custom.swipebtn.SwipeButton
+    <com.example.cuu_ho.Custom.SwipeBtn.SwipeButton
         android:id="@+id/swipeNoState"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -59,7 +59,7 @@
 
     <!--app:button_trail_drawable="@drawable/shape_button_squared"-->
 
-    <com.example.cuu_ho.Custom.swipebtn.SwipeButton
+    <com.example.cuu_ho.Custom.SwipeBtn.SwipeButton
         android:id="@+id/swipeBtnEnabled"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

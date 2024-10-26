@@ -1,4 +1,4 @@
-package com.example.cuu_ho.Custom.swipebtn;
+package com.example.cuu_ho.Custom.SwipeBtn;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
