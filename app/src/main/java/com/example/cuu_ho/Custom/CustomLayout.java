@@ -2,18 +2,23 @@ package com.example.cuu_ho.Custom;
 
 import android.os.Bundle;
 import android.os.Handler;
-import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.RecyclerView;
+import androidx.core.content.ContextCompat;
 
-import com.example.cuu_ho.Presentation.Dialog.CustomDialog;
+import com.example.cuu_ho.Custom.swipebtn.SwipeButton;
 import com.example.cuu_ho.R;
 import com.example.cuu_ho.databinding.ActivityCustomButtonLayoutBinding;
 
 
+
 public class CustomLayout extends AppCompatActivity {
     ActivityCustomButtonLayoutBinding binding;
+    private SwipeButton swipeBtnEnabled;
+    private SwipeButton swipeNoState;
+    private Button toggleBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -174,5 +179,7 @@ public class CustomLayout extends AppCompatActivity {
 //            }
 //        };
 //        handler.postDelayed(runnable, 5000);
+
+
     }
 }
