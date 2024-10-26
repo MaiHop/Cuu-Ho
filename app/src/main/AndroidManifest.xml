@@ -13,6 +13,13 @@
         android:theme="@style/Theme.CuuHo"
         tools:targetApi="31">
         <activity
+            android:name=".Presentation.Activity."
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"/>
+        <activity
             android:name=".Custom.CustomLayout"
             android:exported="true">
             <intent-filter>
@@ -21,6 +28,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".Presentation.Activity.Intro.Intro1Activity"
             android:exported="false">
