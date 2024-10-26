@@ -1,4 +1,4 @@
-package com.example.cuu_ho.Custom.swipebtn;
+package com.example.cuu_ho.Custom.SwipeBtn;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -12,8 +12,6 @@ import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.view.Gravity;
-import com.example.cuu_ho.Custom.swipebtn.OnStateChangeListener;
-import com.example.cuu_ho.Custom.swipebtn.OnActiveListener;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;

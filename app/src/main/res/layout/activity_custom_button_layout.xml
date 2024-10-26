@@ -430,7 +430,8 @@
                 android:src="@drawable/ic_search" />
 
         </LinearLayout>
-        <com.example.cuu_ho.Custom.swipebtn.SwipeButton
+
+        <com.example.cuu_ho.Custom.SwipeBtn.SwipeButton
             android:id="@+id/swipeNoState"
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -450,5 +451,19 @@
             app:inner_text_top_padding="12dp"
             app:inner_text_bottom_padding="12dp"
             app:has_activate_state="true"/>
+
+        <com.example.cuu_ho.Custom.PulseEffect.PulseView
+            android:id="@+id/pulse_red_alert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:pv_alpha="70"
+            app:pv_color="@color/danger_main"
+            app:pv_count="8"
+            app:pv_icon="@drawable/ic_red_alert"
+            app:pv_icon_height="150dp"
+            app:pv_icon_width="150dp"
+            app:pv_interpolator="@android:anim/linear_interpolator"
+            app:pv_measure="height"
+            app:pv_spawn_period="500" />
     </LinearLayout>
 </ScrollView>
