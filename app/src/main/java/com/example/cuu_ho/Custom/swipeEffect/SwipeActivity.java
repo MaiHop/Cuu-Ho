@@ -7,7 +7,6 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
-import com.example.cuu_ho.Custom.CustomLayout;
 import com.example.cuu_ho.Custom.swipebtn.SwipeButton;
 import com.example.cuu_ho.R;
 import com.example.cuu_ho.databinding.CustomSwipeBinding;

@@ -12,6 +12,8 @@ import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.view.Gravity;
+import com.example.cuu_ho.Custom.SwipeBtn.OnStateChangeListener;
+import com.example.cuu_ho.Custom.SwipeBtn.OnActiveListener;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
