@@ -35,6 +35,7 @@ android {
     }
 }
 
+
 dependencies {
 
     implementation(libs.appcompat)
@@ -45,6 +46,8 @@ dependencies {
     //shadow
     implementation(libs.xneumorphism)
     implementation(libs.xmultidex)
+
+
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
