@@ -3,17 +3,24 @@ package com.example.cuu_ho.Custom;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.cuu_ho.Presentation.Dialog.CustomDialog;
-import com.example.cuu_ho.R;
+import com.example.cuu_ho.Custom.PulseEffect.PulseView;
+import com.example.cuu_ho.Custom.SwipeBtn.SwipeButton;
 import com.example.cuu_ho.databinding.ActivityCustomButtonLayoutBinding;
 
 
-public class CustomLayout extends AppCompatActivity {
+
+public class CustomLayout extends AppCompatActivity implements
+        View.OnClickListener,
+        PulseView.PulseListener {
     ActivityCustomButtonLayoutBinding binding;
+    private SwipeButton swipeBtnEnabled;
+    private SwipeButton swipeNoState;
+    private Button toggleBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -181,5 +188,26 @@ public class CustomLayout extends AppCompatActivity {
 //            }
 //        };
 //        handler.postDelayed(runnable, 5000);
+        binding.pulseRedAlert.setPulseListener(this);
+        binding.pulseRedAlert.setOnClickListener(this);
+
+    }
+
+    private int mCounter;
+
+    @Override
+    public void onClick(final View v) {
+        if (mCounter++ % 2 == 0) binding.pulseRedAlert.startPulse();
+        else binding.pulseRedAlert.finishPulse();
+    }
+
+    @Override
+    public void onStartPulse() {
+        Toast.makeText(CustomLayout.this, "Start pulse", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onFinishPulse() {
+        Toast.makeText(CustomLayout.this, "Finish pulse", Toast.LENGTH_SHORT).show();
     }
 }
