@@ -45,6 +45,8 @@ dependencies {
     //shadow
     implementation(libs.xneumorphism)
     implementation(libs.xmultidex)
+    implementation(libs.navigation.fragment)
+    implementation(libs.navigation.ui)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
