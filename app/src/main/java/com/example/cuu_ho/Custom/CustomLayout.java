@@ -21,6 +21,13 @@ public class CustomLayout extends AppCompatActivity {
         binding = ActivityCustomButtonLayoutBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         initialize();
+
+        binding.btnPrimary.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                binding.edtPhonelayout.setError("Vui lòng chọn ngày");
+            }
+        });
     }
 
     private void initialize() {

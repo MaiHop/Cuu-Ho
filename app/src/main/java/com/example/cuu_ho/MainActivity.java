@@ -15,12 +15,8 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.example.cuu_ho.Persentation.Activity.Intro.LoadingActivity;
-import com.example.cuu_ho.Persentation.Activity.Intro.WelcomeActivity;
-import com.example.cuu_ho.Persentation.Fragment.AccountFragment;
-import com.example.cuu_ho.Persentation.Fragment.HistoryFragment;
-import com.example.cuu_ho.Persentation.Fragment.HomeFragment;
-import com.example.cuu_ho.Persentation.Fragment.WorkShopFragment;
+
+import com.example.cuu_ho.Presentation.Activity.Intro.WelcomeActivity;
 import com.example.cuu_ho.databinding.ActivityLoadingBinding;
 import com.example.cuu_ho.databinding.ActivityLoginBinding;
 import com.example.cuu_ho.databinding.ActivityMainBinding;
